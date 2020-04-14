@@ -1,0 +1,217 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  background-color: #fafafa;
+  color: #333333;
+}
+
+/*
+  Boostrap Mixins and Variables are defined first.
+  Examples start at line 234.
+  Clearfix
+  For modern browsers
+  1. The space content is one way to avoid an Opera bug when the
+  contenteditable attribute is included anywhere else in the document.
+  Otherwise it causes space to appear at the top and bottom of elements
+  that are clearfixed.
+
+  2. The use of `table` rather than `block` is only necessary if using
+  `:before` to contain the top-margins of child elements.
+  Source: 
+*/
+/************************** Media queries breakpoints **************************/
+/* Extra small screen / phone */
+/* Small screen / tablet */
+/* Medium screen / desktop */
+/* Large screen / wide desktop */
+/************************** Grid system **************************/
+/* Number of columns in the grid. */
+/* Padding between columns. Gets divided in half for the left and right. */
+/************************** Centered container element **************************/
+/************************** Creates a row **************************/
+/* Generate the extra small columns */
+/* Generate the small columns */
+/* Generate the medium columns */
+/* Generate the large columns */
+/************************** Displays **************************/
+/************************** Alignment **************************/
+/* Vertical alignment */
+/* Horizontal alignment */
+/************************** Float **************************/
+/************************** Text Alignment **************************/
+/************************** Text transform **************************/
+/* Table Responsive */
+header {
+  background-color: #795548;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+header:before, header:after {
+  content: " ";
+  display: table;
+}
+header:after {
+  clear: both;
+}
+header .header__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  justify-content: center;
+}
+header .header__row:before, header .header__row:after {
+  content: " ";
+  display: table;
+}
+header .header__row:after {
+  clear: both;
+}
+header .header__row h1 {
+  font-size: 1em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.repositories {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+.repositories:before, .repositories:after {
+  content: " ";
+  display: table;
+}
+.repositories:after {
+  clear: both;
+}
+@media (min-width: 480px) {
+  .repositories {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .repositories {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .repositories {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .repositories {
+    max-width: 1200px;
+  }
+}
+.repositories .repositories__button {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.repositories .repositories__button input[type=text] {
+  padding: 5px;
+  width: 30%;
+}
+.repositories .repositories__button input[type=submit] {
+  margin-top: 10px;
+  padding: 8px 15px;
+  background-color: #fb8c00;
+  border: none;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.repositories__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.repositories__list:before, .repositories__list:after {
+  content: " ";
+  display: table;
+}
+.repositories__list:after {
+  clear: both;
+}
+.repositories__list .repositories__list__card {
+  max-width: 100%;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 30px;
+}
+@media (min-width: 992px) {
+  .repositories__list .repositories__list__card {
+    max-width: 25%;
+    width: 25%;
+  }
+}
+.repositories__list .repositories__list__card .card__info {
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  padding: 15px;
+  min-height: 421px;
+}
+.repositories__list .repositories__list__card .card__info img {
+  width: 100%;
+  height: auto;
+}
+.repositories__list .repositories__list__card .card__info h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.repositories__list .repositories__list__card .card__info p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.repositories__list .repositories__list__card .card__info a {
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  background-color: #fb8c00;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+  padding: 10px 30px;
+  width: 60%;
+  margin: 0px auto;
+}
+
+#loading {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

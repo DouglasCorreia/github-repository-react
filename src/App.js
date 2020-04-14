@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
-import Header from './components/header';
-import Main from './pages/main';
+import Header from "./components/header";
+import Main from "./pages/main";
 
-import './style.scss'
+import "./styles/css/style.css";
 
 const App = () => (
   <div className="App">

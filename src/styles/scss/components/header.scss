@@ -1,16 +1,14 @@
-@import '../../style.scss';
-
-header{
+header {
     background-color: #795548;
     @include container-fluid;
     padding-top: 15px;
     padding-bottom: 15px;
-    
-    .header__row{
+
+    .header__row {
         @include make-row();
         justify-content: center;
 
-        h1{
+        h1 {
             font-size: 1em;
             color: #ffffff;
             text-transform: uppercase;
